@@ -1,0 +1,51 @@
+<!--
+  Name: Abraham Vallejos-Soto
+  Date: 3/22/2023
+  Assignment: Week 3 Lab 
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Week 3 Lab</title>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"
+    />
+
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script src="./conversion.js"></script>
+  </head>
+
+  <body>
+    <div data-role="page" id="page">
+      <div data-role="header">Converting fluid measurements</div>
+
+      <div data-role="content">
+        <label for="gallons">Enter the quatity in gallons:</label>
+        <input
+          type="range"
+          id="gallons"
+          min="0"
+          max="100"
+          placeholder="gallons"
+        />
+
+        <!-- Space -->
+        <br />
+        <button onclick="calculateConversion()">Display</button>
+        <br />
+        <!-- Space -->
+
+        <p>Quantity entered <bold id="result">0</bold></p>
+      </div>
+
+      <div data-role="footer"><small>Fluid quanity converter</small></div>
+    </div>
+  </body>
+</html>
